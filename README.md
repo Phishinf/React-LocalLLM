@@ -1,4 +1,6 @@
-# Print&Gift Chatbot Integration
+# React-LocalLLM
+Try to build a frontend on HuggingFace Spaces by leveraging the Local LLM backend, saving costs and preserving privacy
+
 
 This project provides a complete solution for integrating a smart chatbot into the Print&Gift website. The chatbot can answer product questions, provide FAQs, and handle customer inquiries by scraping actual data from the Print&Gift website.
 
