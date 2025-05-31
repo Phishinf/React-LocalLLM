@@ -13,7 +13,7 @@ This project provides a complete solution for integrating a smart chatbot into t
 - **Data Scraper**: Extract real data from the Print&Gift website
 - **Image Processing**: Basic image recognition for similar product suggestions
 
-## File Structure
+## File Structure in php settings
 
 ```
 ├── index.php                     # Main entry point and router
@@ -28,7 +28,7 @@ This project provides a complete solution for integrating a smart chatbot into t
 └── products_cache.json           # Product cache (created automatically)
 ```
 
-## Installation
+### Installation
 
 1. Make sure you have PHP 7.4+ installed
 2. Install dependencies:
@@ -48,16 +48,16 @@ This project provides a complete solution for integrating a smart chatbot into t
    php -S localhost:8100
    ```
 
-## Usage
+### Usage
 
-### Accessing the Website
+#### Accessing the Website
 
 - Main Homepage: `http://localhost:8100/`
 - Full Chat Interface: `http://localhost:8100/chat`
 - Simple Chat Widget: `http://localhost:8100/widget`
 - Debug Tool: `http://localhost:8100/debug.php`
 
-### Running the Scraper
+#### Running the Scraper
 
 To fetch the latest products and FAQs from the Print&Gift website:
 
@@ -67,11 +67,11 @@ php p&gscraper.php
 
 This will create or update the `p&ggift products_data.json` file with the latest information.
 
-### Integration Into the Homepage
+#### Integration Into the Homepage
 
 The chatbot appears as a chat bubble icon (💬) in the bottom right corner of the homepage. Clicking this icon toggles the chatbot interface.
 
-### API Endpoints
+#### API Endpoints
 
 - `/api/chat` - Process chat messages
 - `/api/process-image` - Handle image uploads
@@ -79,13 +79,13 @@ The chatbot appears as a chat bubble icon (💬) in the bottom right corner of t
 - `/api/faq` - Access FAQ data
 - `/api/refresh` - Refresh the product cache
 
-## Customizing the Chatbot
+### Customizing the Chatbot
 
-### Changing the Appearance
+#### Changing the Appearance
 
 You can modify the chat-widget.php and chat_interface.php files to change the colors, styles, and layout of the chatbot. The primary styling variables are defined at the top of each CSS section.
 
-### Enhancing the Intelligence
+#### Enhancing the Intelligence
 
 The chatbot's intelligence is primarily controlled by the `analyzeUserIntent()` and `extractEntities()` functions in `api_handler_enhanced.php`. You can improve these functions by:
 
@@ -93,7 +93,7 @@ The chatbot's intelligence is primarily controlled by the `analyzeUserIntent()` 
 2. Implementing more sophisticated entity extraction
 3. Integrating with a third-party NLP service
 
-### Adding More Products
+#### Adding More Products
 
 You can either:
 
@@ -101,9 +101,7 @@ You can either:
 2. Add products manually to the `p&ggift products_data.json` file
 3. Update the `generateSampleProducts()` function in `product_fetcher_enhanced.php`
 
-
-
-## Troubleshooting
+### Troubleshooting
 
 If you encounter issues:
 
