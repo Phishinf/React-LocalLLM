@@ -1,0 +1,21 @@
+flask==2.0.1
+requests==2.26.0
+Pillow==9.0.0
+numpy==1.21.4
+torch
+transformers==4.12.5
+sentence-transformers==2.1.0
+faiss-cpu==1.7.1  # Use faiss-gpu if you have a compatible GPU
+langchain 
+langchain-openai 
+
+python-dotenv 
+gradio 
+langgraph
+
+beautifulsoup4 
+flask 
+sentence-transformers 
+torch 
+transformers 
+pillow
